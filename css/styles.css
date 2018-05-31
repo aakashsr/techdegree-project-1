@@ -1,0 +1,159 @@
+body {
+  text-align: center;
+  color: white;
+  font-family: 'Kirang Haerang', cursive;
+  transition-duration : 1s;
+  transition: background-color  1s  ease-out;
+  height: 100vh;
+}
+
+h1{
+  font-family: 'Amatic SC', cursive;
+  margin-top: 0;
+  border-bottom: 2px solid #ff7260;
+  display: inline-block;
+  padding-top: .75em;
+}
+
+
+#container{
+  height: 90vh;
+  border-bottom: 2px solid #ff7260;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+#tag-line{
+  font-family: 'Amatic SC', cursive;
+}
+#quote-box {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  right: 15%;
+  width: 70%;
+  line-height: .5;
+}
+.quote {
+  font-size: 1.75em;
+  font-weight: 400;
+  line-height: 1.1;
+  position: relative;
+  margin: 0;
+} 
+.quote:before, .quote:after {
+  font-size: 4.5rem;
+  line-height: 2.5rem;
+  position: absolute;
+}
+.quote:before {
+  content: "“";
+  top: .25em;
+  left: -.5em;
+}
+.quote:after {
+  content: "”";
+  bottom: -.1em;
+  margin-left: .1em;
+  position: absolute;
+}
+.source {
+  font-size: 1.25rem;;
+  letter-spacing: 0.05em;
+  line-height: 1.1;
+  text-align: right;
+  margin-right: 4em;
+}
+.source:before {
+  content: "—";
+}
+
+.tag {
+  font-size: 1.25rem;;
+  letter-spacing: 0.05em;
+  line-height: 1.1;
+  text-align: left;
+  margin-right: 4em;
+}
+
+.citation {
+  font-style: italic;
+}
+.citation:before {
+  content: ", ";
+  font-style: normal;
+}
+.year:before {
+  content: ", ";
+  font-style: normal;
+}
+
+#loadQuote {
+  font-size: 1.25em;
+  position: absolute;
+  width: 12em;
+  display: inline-block;
+  left: 50%;
+  top:70%;
+  margin-left: -6em;
+  margin-bottom: 150px;
+  border-radius: 4px;
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: #36b55c;
+  padding: 10px 0;
+  transition: background-color 1s ease-out ;
+}
+
+.footer{
+ font-family: 'Amatic SC', cursive;
+ position: absolute;
+ top: 90%;
+ width: 60%;
+ left: 20%;
+ right:20%;
+ font-size: 1.2em;
+}
+
+.icon{
+  padding-left: .45em;
+}
+
+#loadQuote:hover {
+  background-color: rgba(255,255,255);
+}
+#loadQuote:focus {
+  outline: none;
+}
+
+@media (max-width: 420px) {
+  .quote {
+    font-size: 1.5em;
+  }
+  .quote:before, .quote:after {
+    font-size: 3rem;
+  }
+  .source {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px){
+  .quote{
+    font-size: 3rem;
+  }
+
+  .quote:before, .quote:after{
+    font-size: 6rem;
+  }
+
+  #container{
+    width: 80%;
+  }
+
+  #loadQuote{
+    top:72%;
+    padding: 15px 0;
+  }
+}
