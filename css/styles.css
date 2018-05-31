@@ -4,7 +4,7 @@ body {
   font-family: 'Kirang Haerang', cursive;
   transition-duration : 1s;
   transition: background-color  1s  ease-out;
-  height: 100vh;
+  max-height: 100vh;
 }
 
 h1{
