@@ -132,10 +132,10 @@ function printQuote(){
 function changeBgColor(){
 	//Assigning a random value between 0 to 255 to p,q,r,u,v,w
 	var p = Math.floor(Math.random() * 256); 
-	var q = Math.floor(Math.random() * 60);
+	var q = Math.floor(Math.random() * 100);
 	var r = Math.floor(Math.random() * 256);
 	var u = Math.floor(Math.random() * 256); 
-	var v = Math.floor(Math.random() * 60);
+	var v = Math.floor(Math.random() * 100);
 	var w = Math.floor(Math.random() * 256);
 
 	var colorA = "rgba( " + p + "," + q + "," + r + ")";
